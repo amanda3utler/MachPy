@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MachPy
+Version: 0.1
+Summary: Visualizer for Mach Data from Omega500
+Home-page: UNKNOWN
+Author: Amanda Butler
+Author-email: amanda.butler@yale.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Computational Cosmology
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
