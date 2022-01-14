@@ -71,7 +71,7 @@ def projected(axis,m_cube,title):
                 frame[j,i] = m_ave
 
     fig, ax = plt.subplots(figsize=(10,10))
-    im = ax.imshow(frame, origin="lower", extent=[-(H_scale / 2), H_scale / 2, -(H_scale / 2), H_scale / 2])
+    im = ax.imshow(frame, origin="lower", extent=[-(H_scale / 2), H_scale / 2, -(H_scale / 2), H_scale / 2],cmap="terrain")
     plt.close()
     ax.set_xlabel(label(axis)[0],fontsize=20,**{'fontname':'Times New Roman'})
     ax.set_ylabel(label(axis)[1],fontsize=20,**{'fontname':'Times New Roman'})
