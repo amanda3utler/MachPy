@@ -19,7 +19,7 @@ def get_ID(haloid,lw):
     mach_data = set_lw(cutoff=lw, ndin=extract_halo(haloid_path=head + str(haloid) + end))
     return mach_data
 
-lw = st.sidebar.slider('Lower Cutoff',1,4.0,value=st.session_state.lw,step=0.1)
+lw = st.sidebar.slider('Lower Cutoff',1.0,4.0,value=st.session_state.lw,step=0.1)
 
 select = st.sidebar.selectbox("Type",("Slice","Projection"))
 axe = st.sidebar.selectbox("Axis",("x","y","z"))
