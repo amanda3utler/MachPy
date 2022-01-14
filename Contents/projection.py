@@ -84,29 +84,3 @@ def projected(axis,m_cube,title):
     for l in cb.ax.yaxis.get_ticklabels():
         l.set_family("Times New Roman")
     return fig
-#def projected(axis,m_cube,r200c=False):
-    #h = 0.7
-   # H_scale = 2 / h
-
-    #weights = np.ones((256, 256, 256))
-    #weights[np.where(m_cube < 1)] = 1e-16
-
-    #data = dict(m_cube=(m_cube, ""),weights=(weights,""))
-    #bbox = np.array([[-(H_scale / 2), H_scale / 2], [-H_scale / 2, H_scale / 2], [-H_scale / 2, H_scale / 2]])
-    #frame = yt.load_uniform_grid(data, domain_dimensions=m_cube.shape, length_unit='Mpc', bbox=bbox)
-    #Slc = yt.ProjectionPlot(frame, axis, "m_cube",weight_field="weights")
-    #Slc.set_cmap('m_cube', 'terrain')
-    #Slc.set_log('m_cube', False)
-    #Slc.set_xlabel(label(axis)[0])
-    #Slc.set_ylabel(label(axis)[1])
-    #Slc.set_width((H_scale, 'Mpc'))
-    #Slc.set_colorbar_label('m_cube', 'Average $\mathcal{M}$')
-    #if 0.85 * np.max(m_cube) >= 1.1:
-        #max_lim = 0.7 * np.max(m_cube)
-    #else:
-        #max_lim = 1.1
-    #Slc.set_zlim("m_cube", 1, max_lim)
-    #Slc.set_font_size(24)
-    #if r200c == True:
-        #
-    #return Slc
